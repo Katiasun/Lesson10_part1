@@ -15,7 +15,7 @@ main {
   width: 1500px;
   height: 864px;
   background: #b07cf7;
-
+  padding: 20px 0 120px;
   text-align: center;
 }
 .content h1 {
@@ -32,24 +32,19 @@ main {
   font-size: 17px;
   line-height: 25px;
   padding: 30px 464px 0 454px;
-
+  margin-bottom: 30px;
   color: #ffffff;
 }
 .box {
   display: flex;
   justify-content: space-around;
-
-  position: absolute;
-  top: 470px;
-  left: 780px;
+  margin: 0 auto;
   width: 1170px;
-  height: 314px;
+  margin-bottom: 20px;
 }
 .box__info {
   color: #ffffff;
   text-align: left;
-  margin-left: 20px;
-  margin-top: -90px;
 }
 .box p {
   padding-top: 15px;
@@ -66,7 +61,6 @@ main {
 .data {
   position: absolute;
   top: 30px;
-  margin-left: 30px;
   height: 66px;
   width: 66px;
   text-transform: uppercase;
@@ -88,9 +82,16 @@ main {
 
   color: #ffffff;
 }
-.left__obraz {
-  width: 370px;
+.card {
   height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+
+  position: relative;
+}
+.card-1 {
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 0%,
@@ -98,9 +99,7 @@ main {
     ),
     url("../img/thumbnail\ \(2\).png");
 }
-.middle__obraz {
-  width: 370px;
-  height: 310px;
+.card-2 {
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 0%,
@@ -108,9 +107,7 @@ main {
     ),
     url("../img/thumbnail\ \(1\).png");
 }
-.right__obraz {
-  width: 370px;
-  height: 310px;
+.card-3 {
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 0%,
@@ -118,23 +115,21 @@ main {
     ),
     url("../img/thumbnail.png");
 }
-span {
-  font-family: "Raleway" sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 23px;
-  text-transform: uppercase;
-
-  color: #ffffff;
-  padding: 16px 43px;
-}
-button {
+.button {
+  display: block;
+  margin: 0 auto;
   background: #f72b3b;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   width: 205px;
-  height: 55px;
   border: none;
-  position: absolute;
-  left: 1255px;
-  top: 842px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px;
 }
